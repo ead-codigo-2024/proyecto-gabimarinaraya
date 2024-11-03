@@ -42,7 +42,7 @@ header .img-logo {
 }
 
 .navbar-nav .nav-link:hover {
-    color: #555;
+    color: red;
 }
 
 .carousel-item img {
@@ -51,18 +51,15 @@ header .img-logo {
 }
 
 .carousel-caption h5 {
-    font-size: 2rem; /* Tamaño del título */
-    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.7); /* Sombra para mejor legibilidad */
+    font-size: 2rem;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.7);
+    
 }
 
 .carousel-caption p {
-    font-size: 1rem; /* Tamaño de la descripción */
+    font-size: 1rem;
 }
 
-h2 {
-    font-size: 1.5rem;
-    margin-top: 1rem;
-}
 
 footer {
     background-color: #ffffff;
@@ -79,54 +76,77 @@ footer a:hover {
 }
 
 .img-fluid {
-    max-height: 300px; /* Asegura que las imágenes no sean más altas de 300px */
-    object-fit: cover; /* Mantiene la proporción de las imágenes */
-}
-a {
-    text-decoration: none; /* Elimina el subrayado */
-    color: inherit; /* Mantiene el color del texto original */
+    max-height: 300px;
+    object-fit: cover;
 }
 
-/* Estilos para la página del proyecto */
+a {
+    text-decoration: none;
+    color: inherit;
+}
 
 h1.display-4 {
-    font-size: 2rem; /* Asegúrate de que esté sin espacio */
+    font-size: 2rem;
     font-weight: bold;
     margin-top: 20px; /* Espacio arriba del título */
     margin-bottom: 20px; /* Espacio debajo del título */
+    color: red;
+}
+
+h2 {
+    font-size: 2rem;
+    font-weight: bold;
+    margin-top: 20px; /* Espacio arriba del título */
+    margin-bottom: 20px; /* Espacio debajo del título */
+    color: red;
+    margin-left: 70px; /* Margen izquierdo para alinear con h3 */
+}
+
+h3 {
+    font-size: 1.5rem;
+    font-weight: bold;
+    margin-top: 20px; /* Espacio arriba del título */
+    margin-bottom: 20px; /* Espacio debajo del título */
+    color: black;
+    margin-left: 0px; /* Margen izquierdo para alinear con h2 */
 }
 
 .content-left img {
     margin-bottom: 60px; /* Espacio debajo de la imagen */
-    display: block; /* Asegúrate de que la imagen se comporte como un bloque */
+    display: block;
 }
 
 .text-left {
     text-align: left;
-    margin-left: 100px; /* Ajusta el margen izquierdo según lo que prefieras */
+    margin-left: 100px;
 }
 
 .content-left {
-    max-width: 600px; /* Ajusta el ancho máximo del contenido si deseas un límite */
-    margin-left: 100px; /* Ajusta el margen izquierdo según lo que prefieras */
+    max-width: 600px;
+    margin-left: 100px;
 }
+
 p {
-    margin-top: 40px; /* Espacio arriba del párrafo */
+    margin-top: 20px; /* Espacio arriba del párrafo */
 }
-
-
-
-/* Carrusel de fotos */
 
 .small-carousel {
-    max-width: 400px; /* Ajusta el tamaño máximo del carrusel */
-    margin-left: 70px; /* Alineado con el contenido de texto */
+    max-width: 400px;
+    margin-left: 70px;
 }
 
 .small-carousel .carousel-item img {
-    height: 250px; /* Define la altura de las imágenes */
-    object-fit: cover; /* Ajusta las imágenes para llenar el espacio */
+    height: 250px;
+    object-fit: cover;
 }
 
-
-
+ /* Estilo fotografia */
+ 
+ .text-container {
+    background-color: black; /* Color de fondo negro */
+    color: white; /* Color de texto blanco */
+    padding: 20px; /* Espacio interno */
+    border-radius: 8px; /* Esquinas redondeadas */
+    max-width: 1000px; /* Ancho máximo del cuadro */
+    margin: 0 auto; /* Centra el cuadro horizontalmente */
+}
