@@ -278,6 +278,27 @@ h7 {
 }
 
 
+.subscribe-section {
+    background-color: #000; /* Fondo negro */
+    color: #fff; /* Texto en blanco */
+    padding: 2rem;
+    border-radius: 8px; /* Bordes redondeados */
+    margin-top: 2rem;
+}
+
+.subscribe-form .form-control {
+    max-width: 300px;
+    border: none;
+    border-radius: 0;
+}
+
+.subscribe-form .btn-light {
+    border-radius: 0;
+    font-weight: bold;
+}
+
+
+
 
 
 
