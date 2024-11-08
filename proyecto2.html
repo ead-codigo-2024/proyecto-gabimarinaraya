@@ -1,13 +1,17 @@
 <!DOCTYPE html>
-
 <html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Revista JOIA - Ejemplo</title>
+    <title>Revista JOIA - arte</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
     <link rel="stylesheet" href="styles.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"> <!-- Font Awesome -->
+    <style>
+        .nav-link.active {
+            color: red !important; /* Asegúrate de que el color rojo se aplique */
+        }
+    </style>
 </head>
 <body>
 
@@ -17,10 +21,12 @@
         </button>
 
         <div class="logo mx-auto">
+                    <a href="inicio.html">
             <img src="fotos/joia-logo.png" alt="Logo JOIA" class="img-logo">
         </div>
     </header>
 
+<!-- MENÚ-->
     <nav class="navbar navbar-expand-md">
         <div class="collapse navbar-collapse" id="navbarMenu">
             <ul class="navbar-nav mx-auto"> <!-- Centrar el menú -->
@@ -28,7 +34,7 @@
                     <a href="fotografia.html" class="nav-link">Fotografía</a>
                 </li>
                 <li class="nav-item">
-                    <a href="diseño.html" class="nav-link">Diseño</a>
+                    <a href="diseño.html" class="nav-link ">Diseño</a>
                 </li>
                 <li class="nav-item">
                     <a href="arte.html" class="nav-link">Arte</a>
@@ -36,94 +42,114 @@
                 <li class="nav-item">
                     <a href="ilustración.html" class="nav-link">Ilustración</a>
                 </li>
-                <li class="nav-item">
+
+                <!-- JOIA con menú desplegable -->
+                <li class="nav-item dropdown">
                     <a href="joia.html" class="nav-link">JOIA</a>
+                    <div class="dropdown-menu">
+                        <a href="edicion1.html" class="dropdown-item">EDICIONES</a>
+                        <a href="joia.html" class="dropdown-item">QUIÉNES SOMOS</a>
+
+                    </div>
                 </li>
             </ul>
         </div>
     </nav>
 
-<section class="my-5">
-    <h1 class="display-4 text-left">PROYECTO 2</h1>
-    <img src="https://via.placeholder.com/1500x600" class="d-block w-100" alt="img">
+    <section class="my-5">
+        <h1 class="display-4 text-left">CRYSALYS:</h1>
+        <img src="fotos/CRY5.jpeg" class="d-block w-100 mb-5" alt="img">
+        
+
+        <div class="container">
+            <div class="row gy-4 d-flex"> 
+            
+                <!-- Columna 1: Titulo -->
+                <div class="col-12 col-md-4">
+                    <h5>ANIME Y SNEAKER</h5>
+                    <p>
+                        <strong>GABRIELA CORREA</strong><br>
+                        <span class="thin-text">58.02</span><br>
+                    </p>
+                </div>
     
-    <div class="container content-left">
-        <p>Producción: ZBrush, Autodesk Maya, The Foundry Mari, Arnold Renderer, Blender, Forge
-           Adobe CC, Flame, Asterion
-           Organic and Polygonal Modeling, UV Layout, Texturing, Renderization, Sound Design
-           Producción: ZBrush, Autodesk Maya, The Foundry Mari, Arnold Renderer, Blender, Forge
-           Producción: ZBrush, Autodesk Maya, The Foundry Mari, Arnold Renderer, Blender, Forge</p>
-    </div>
-
-    <!-- Galería de imágenes en miniatura -->
-    <div class="container gallery mt-4">
-        <div class="row">
-            <div class="col-6 col-md-3 mb-3">
-                <img src="https://via.placeholder.com/400x250" class="img-thumbnail" alt="Imagen 1" data-bs-toggle="modal" data-bs-target="#imageModal1">
+                <!-- Columna 2 -->
+                <div class="col-12 col-md-4">
+                    <h5>ME GUSTA DIBUJAR CHICAS CON LAS QUE SIENTO QUE PODRÍA TENER ALGO EN COMÚN.</h5>
+                    <p>
+                        <span class="thin-text">Una chica sentada en el piso de su habitación, tocando la guitarra entre pedales y cables. Cuando Gabriela Correa, quien dibuja bajo el alias Chris Alis, nos mandó el preview de la ilustración que quería crear para la portada de esta revista, tuvo un ataque de nostalgia. Me recordó a mí misma a los quince, intentando autoenseñarme algunos acordes en la Stratocaster que pedí como regalo de cumpleaños ese año.</span><br><br>
+                        <span class="thin-text">Visualicé la pila de revistas Rolling Stones sobre mi escritorio y los pósters de mi banda favorita de aquel momento pegados en la pared. Ahí estaba, despierta alguna madrugada, imaginando cómo sería mi vida para el 2020. En qué persona me convertiría. Sentimiento agridulce que todos necesitamos tener a veces.</span><br><br>
+                        <span class="thin-text">Siempre parto con una idea de los elementos que quiero en mi dibujo. Pienso en los hobbies que podría llegar a tener la chica que planteo hacer, como pasaría su tiempo", dice Gabriela cuando la visitó en su casa en Casa Blanca, sobre su proceso de trabajo. "Y los objetos que muestro, sean instrumentos, zapatillas, cómics o juguetes, todo se conecta conmigo de alguna forma. Dibujo cosas que me gustan a mí o sobre las que no sé mucho, pero que me llaman la atención.</span><br><br>
+                    </p>
+                </div>
+    
+                <!-- Columna 3: -->
+                <div class="col-12 col-md-4 d-flex flex-column justify-content-end text-start"> <!-- Usamos text-start para alinear el texto a la izquierda -->
+                    <p>
+                        <strong>CASABLANCA, CHILE</strong><br>
+                        <span class="thin-text">IG @CURISARIS</span><br>
+                    </p>
+                </div>
+        
             </div>
-            <div class="col-6 col-md-3 mb-3">
-                <img src="https://via.placeholder.com/400x250" class="img-thumbnail" alt="Imagen 2" data-bs-toggle="modal" data-bs-target="#imageModal2">
-            </div>
-            <div class="col-6 col-md-3 mb-3">
-                <img src="https://via.placeholder.com/400x250" class="img-thumbnail" alt="Imagen 3" data-bs-toggle="modal" data-bs-target="#imageModal3">
-            </div>
-            <div class="col-6 col-md-3 mb-3">
-                <img src="https://via.placeholder.com/400x250" class="img-thumbnail" alt="Imagen 4" data-bs-toggle="modal" data-bs-target="#imageModal4">
-            </div>
-        </div>
-    </div>
-
-    <!-- Modales para ampliación de imagen -->
-    <div class="modal fade" id="imageModal1" tabindex="-1" aria-hidden="true">
-        <div class="modal-dialog modal-dialog-centered">
-            <div class="modal-content">
-                <img src="https://via.placeholder.com/800x500" class="img-fluid" alt="Imagen 1 ampliada">
-            </div>
-        </div>
-    </div>
-
-    <div class="modal fade" id="imageModal2" tabindex="-1" aria-hidden="true">
-        <div class="modal-dialog modal-dialog-centered">
-            <div class="modal-content">
-                <img src="https://via.placeholder.com/800x500" class="img-fluid" alt="Imagen 2 ampliada">
-            </div>
-        </div>
-    </div>
-
-    <div class="modal fade" id="imageModal3" tabindex="-1" aria-hidden="true">
-        <div class="modal-dialog modal-dialog-centered">
-            <div class="modal-content">
-                <img src="https://via.placeholder.com/800x500" class="img-fluid" alt="Imagen 3 ampliada">
-            </div>
-        </div>
-    </div>
-
-    <div class="modal fade" id="imageModal4" tabindex="-1" aria-hidden="true">
-        <div class="modal-dialog modal-dialog-centered">
-            <div class="modal-content">
-                <img src="https://via.placeholder.com/800x500" class="img-fluid" alt="Imagen 4 ampliada">
-            </div>
-        </div>
-    </div>
-</section>
-
-
-        <!-- Contacto -->
-        <div class="container text-center my-5">
-            <p>I am thrilled to answer to your next project ➔</p>
-            <a href="mailto:makifkarasu@outlook.com">makifkarasu@outlook.com</a><br>
-            <a href="#">View Resume</a>
         </div>
     </section>
+    
+    
 
-    <!-- Footer -->
+<!-- Fotos -->
+<div class="container gallery mt-4">
+    <div class="row justify-content-center g-2">
+        <div class="col-6 col-md-4 col-lg-2">
+            <img src="fotos/CRY1.jpg" class="img-fluid rounded" alt="Imagen 1" style="height: 200px; width: 100%; object-fit: cover;">
+        </div>
+        <div class="col-6 col-md-4 col-lg-2">
+            <img src="fotos/CRY2.jpg" class="img-fluid rounded" alt="Imagen 2" style="height: 200px; width: 100%; object-fit: cover;">
+        </div>
+        <div class="col-6 col-md-4 col-lg-2">
+            <img src="fotos/CRY3.jpg" class="img-fluid rounded" alt="Imagen 3" style="height: 200px; width: 100%; object-fit: cover;">
+        </div>
+        <div class="col-6 col-md-4 col-lg-2">
+            <img src="fotos/CRY10.jpg" class="img-fluid rounded" alt="Imagen 4" style="height: 200px; width: 100%; object-fit: cover;">
+        </div>
+        <div class="col-6 col-md-4 col-lg-2">
+            <img src="fotos/CRY8.jpg" class="img-fluid rounded" alt="Imagen 5" style="height: 200px; width: 100%; object-fit: cover;">
+        </div>
+    </div>
+</div>
+
+
+
+
+
+
+<!-- Contacto -->
+        <div class="container text-center my-5">
+            <a href="https://crisalys.bigcartel.com" target="_blank">CRISALYS.BIGCARTEL.COM</a><br>
+        </div>
+        
+
+    <!-- FINAL ICONOS -->
     <footer class="text-center py-4">
         <ul class="list-inline">
-            <li class="list-inline-item"><a href="#">Instagram</a></li>
-            <li class="list-inline-item"><a href="#">Facebook</a></li>
-            <li class="list-inline-item"><a href="#">JOIA</a></li>
+            <li class="list-inline-item">
+                <a href="https://www.instagram.com/joiamagazine" target="_blank">
+                    <i class="fab fa-instagram fa-2x"></i>
+                </a>
+            </li>
+            <li class="list-inline-item">
+                <a href="https://web.facebook.com/p/JOIA-Magazine-100050523577872/?_rdc=1&_rdr#" target="_blank">
+                    <i class="fab fa-facebook fa-2x"></i>
+                </a>
+            </li>
+            <li class="list-inline-item">
+                <a href="https://www.twitter.com/joiamagazine" target="_blank">
+                    <i class="fab fa-twitter fa-2x"></i>
+                </a>
+            </li>
         </ul>
     </footer>
+    
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
 </body>

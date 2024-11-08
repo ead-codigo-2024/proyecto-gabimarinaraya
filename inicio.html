@@ -3,10 +3,15 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Revista JOIA - Ejemplo</title>
+    <title>Revista JOIA - arte</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
     <link rel="stylesheet" href="styles.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"> <!-- Font Awesome -->
+    <style>
+        .nav-link.active {
+            color: red !important; 
+        }
+    </style>
 </head>
 <body>
 
@@ -16,56 +21,65 @@
         </button>
 
         <div class="logo mx-auto">
+                    <a href="inicio.html">
             <img src="fotos/joia-logo.png" alt="Logo JOIA" class="img-logo">
         </div>
     </header>
 
     <nav class="navbar navbar-expand-md">
         <div class="collapse navbar-collapse" id="navbarMenu">
-            <ul class="navbar-nav mx-auto"> <!-- Centrar el menú -->
+            <ul class="navbar-nav mx-auto"> 
                 <li class="nav-item">
                     <a href="fotografia.html" class="nav-link">Fotografía</a>
                 </li>
                 <li class="nav-item">
-                    <a href="diseno.html" class="nav-link">Diseño</a>
+                    <a href="diseño.html" class="nav-link ">Diseño</a>
                 </li>
                 <li class="nav-item">
                     <a href="arte.html" class="nav-link">Arte</a>
                 </li>
                 <li class="nav-item">
-                    <a href="ilustracion.html" class="nav-link">Ilustración</a>
+                    <a href="ilustración.html" class="nav-link">Ilustración</a>
                 </li>
-                <li class="nav-item">
+<!-- JOIA con menú desplegable -->
+                <li class="nav-item dropdown">
                     <a href="joia.html" class="nav-link">JOIA</a>
+                    <div class="dropdown-menu">
+                        <a href="edicion1.html" class="dropdown-item">EDICIONES</a>
+                        <a href="joia.html" class="dropdown-item">QUIÉNES SOMOS</a>
+                    
+                    </div>
                 </li>
             </ul>
         </div>
     </nav>
 
-    <div id="mainCarousel" class="carousel slide" data-bs-ride="carousel">
+<!-- Carrusel de fotos -->
+
+<div id="mainCarousel" class="carousel slide" data-bs-ride="carousel">
         <div class="carousel-inner">
             <div class="carousel-item active">
-                <a href="Imagenprincipal1.html">
-                <img src="https://via.placeholder.com/1500x600" class="d-block w-100" alt="Primera imagen">
+                <a href="proyecto3.html">
+                <img src="fotos/joia2.jpg" class="d-block w-100" alt="Primera imagen">
                 <div class="carousel-caption d-none d-md-block">
-                    <h5>Título de la Primera Imagen</h5>
-                    <p>Descripción breve de la primera imagen.</p>
+                    <h6>REBEL RIDERS</h6>
+                    <p>MUHAMMAD FADLI</p>
                 </div>
             </div>
             <div class="carousel-item">
-                <a href="Imagenprincipal2.html">
-                <img src="https://via.placeholder.com/1500x600" class="d-block w-100" alt="Segunda imagen">
+                <a href="proyecto1.html">
+                <img src="fotos/PABLO5.jpg" class="d-block w-100" alt="Segunda imagen">
                 <div class="carousel-caption d-none d-md-block">
-                    <h5>Título de la Segunda Imagen</h5>
-                    <p>Descripción breve de la segunda imagen.</p>
+                    <h6>LA LUZ DE LA BESTIA</h6>
+                    <h7>PABLO ALLISON</h7>
                 </div>
             </div>
             <div class="carousel-item">
-                <a href="Imagenprincipal3.html">
-                <img src="https://via.placeholder.com/1500x600" class="d-block w-100" alt="Tercera imagen">
+                <a href="proyecto2.html">
+                <img src="fotos/CRY5.jpeg" class="d-block w-100" alt="Tercera imagen">
                 <div class="carousel-caption d-none d-md-block">
-                    <h5>Título de la Tercera Imagen</h5>
-                    <p>Descripción breve de la tercera imagen.</p>
+                    <h6>CRYSALYS</h6>
+                    <p>GABRIELA CORREA</p>
                 </div>
             </div>
         </div>
@@ -79,66 +93,154 @@
         </button>
     </div>
 
-    <h2 class="my-5">PROYECTOS DESTACADOS</h2>
+    <div class="text-container text-center my-5 bold-text">
+        <h2 class="my-5">PROYECTOS DESTACADOS</h2>
+    </div>
 
     <section class="container my-5">
-      <div class="row">
-    <div class="col-md-4">
-        <a href="proyecto1.html" class="text-decoration-none">
-            <h3>01 Nombre del Proyecto</h3>
-            <p>Descripción breve del proyecto.</p>
-            <img src="https://via.placeholder.com/500x300" class="img-fluid" alt="Imagen proyecto">
-        </a>
-    </div>
-    <div class="col-md-4">
-        <a href="proyecto2.html" class="text-decoration-none">
-            <h3>02 Nombre del Proyecto</h3>
-            <p>Descripción breve del proyecto.</p>
-            <img src="https://via.placeholder.com/500x300" class="img-fluid" alt="Imagen proyecto">
-        </a>
-    </div>
-    <div class="col-md-4">
-        <a href="proyecto3.html" class="text-decoration-none">
-            <h3>03 Nombre del Proyecto</h3>
-            <p>Descripción breve del proyecto.</p>
-            <img src="https://via.placeholder.com/500x300" class="img-fluid" alt="Imagen proyecto">
-        </a>
-    </div>
-    <div class="col-md-4">
-        <a href="proyecto4.html" class="text-decoration-none">
-            <h3>04 Nombre del Proyecto</h3>
-            <p>Descripción breve del proyecto.</p>
-            <img src="https://via.placeholder.com/500x300" class="img-fluid" alt="Imagen proyecto">
-        </a>
-    </div>
-    <div class="col-md-4">
-        <a href="proyecto5.html" class="text-decoration-none">
-            <h3>05 Nombre del Proyecto</h3>
-            <p>Descripción breve del proyecto.</p>
-            <img src="https://via.placeholder.com/500x300" class="img-fluid" alt="Imagen proyecto">
-        </a>
-    </div>
-    <div class="col-md-4">
-        <a href="proyecto6.html" class="text-decoration-none">
-            <h3>06 Nombre del Proyecto</H3>
-            <p>Descripción breve del proyecto.</p>
-            <img src="https://via.placeholder.com/500x300" class="img-fluid" alt="Imagen proyecto">
-        </a>
-    </div>
-</div>
-
+        <div class="row">
+            <div class="col-md-4">
+                <a href="proyecto4.html" class="text-decoration-none">
+                    <h3> 58.04 MURALES DOCUMENTALES</h3>
+                    <p>ARTE / FOTOGRAFÍA.</p>
+                    <!-- Carrusel de imágenes -->
+                    <div id="carouselProyecto1" class="carousel slide" data-bs-ride="carousel">
+                        <div class="carousel-inner">
+                            <div class="carousel-item active">
+                                <img src="fotos/MOH3.jpg" class="d-block w-100" alt="Imagen proyecto 1">
+                            </div>
+                            <div class="carousel-item">
+                                <img src="fotos/MOH4.jpg" class="d-block w-100" alt="Imagen proyecto 2">
+                            </div>
+                            <div class="carousel-item">
+                                <img src="fotos/MOH5.jpg" class="d-block w-100" alt="Imagen proyecto 3">
+                            </div>
+                        </div>
+                        <!-- Controles del carrusel -->
+                        <button class="carousel-control-prev" type="button" data-bs-target="#carouselProyecto1" data-bs-slide="prev">
+                            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                            <span class="visually-hidden">Previous</span>
+                        </button>
+                        <button class="carousel-control-next" type="button" data-bs-target="#carouselProyecto1" data-bs-slide="next">
+                            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                            <span class="visually-hidden">Next</span>
+                        </button>
+                    </div>
+                </a>
+            </div>
+    
+            <!-- Proyecto 2 -->
+            <div class="col-md-4">
+                <a href="proyecto5.html" class="text-decoration-none">
+                    <h3>58.05 A LA CAZA DEL AZAR </h3>
+                    <p>FOTOGRAFÍA</p>
+                    <!-- Carrusel de imágenes -->
+                    <div id="carouselProyecto2" class="carousel slide" data-bs-ride="carousel">
+                        <div class="carousel-inner">
+                            <div class="carousel-item active">
+                                <img src="fotos/nils4.jpg" class="d-block w-100" alt="Imagen proyecto 1">
+                            </div>
+                            <div class="carousel-item">
+                                <img src="fotos/nils5.jpg" class="d-block w-100" alt="Imagen proyecto 2">
+                            </div>
+                            <div class="carousel-item">
+                                <img src="fotos/nils6.jpg" class="d-block w-100" alt="Imagen proyecto 3">
+                            </div>
+                        </div>
+                        <!-- Controles del carrusel -->
+                        <button class="carousel-control-prev" type="button" data-bs-target="#carouselProyecto2" data-bs-slide="prev">
+                            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                            <span class="visually-hidden">Previous</span>
+                        </button>
+                        <button class="carousel-control-next" type="button" data-bs-target="#carouselProyecto2" data-bs-slide="next">
+                            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                            <span class="visually-hidden">Next</span>
+                        </button>
+                    </div>
+                </a>
+            </div>
+    
+            <!-- Proyecto 3 -->
+            <div class="col-md-4">
+                <a href="proyecto6.html" class="text-decoration-none">
+                    <h3>58.06 DRAKE CEREAL</h3>
+                    <p>ILUSTRACIÓN</p>
+                    <!-- Carrusel de imágenes -->
+                    <div id="carouselProyecto3" class="carousel slide" data-bs-ride="carousel">
+                        <div class="carousel-inner">
+                            <div class="carousel-item active">
+                                <img src="fotos/DRAKE1.webp" class="d-block w-100" alt="Imagen proyecto 1">
+                            </div>
+                            <div class="carousel-item">
+                                <img src="fotos/DRAKE2.webp" class="d-block w-100" alt="Imagen proyecto 2">
+                            </div>
+                            <div class="carousel-item">
+                                <img src="fotos/DRAKE3.webp" class="d-block w-100" alt="Imagen proyecto 3">
+                            </div>
+                        </div>
+                        <!-- Controles del carrusel -->
+                        <button class="carousel-control-prev" type="button" data-bs-target="#carouselProyecto3" data-bs-slide="prev">
+                            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                            <span class="visually-hidden">Previous</span>
+                        </button>
+                        <button class="carousel-control-next" type="button" data-bs-target="#carouselProyecto3" data-bs-slide="next">
+                            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                            <span class="visually-hidden">Next</span>
+                        </button>
+                    </div>
+                </a>
+            </div>
         </div>
     </section>
+    
 
+    <div class="container my-5">
+        <div class="row">
+    
+    
+            <div class="col-md-3">
+                <h5>INSPIRATE CON</h5>
+                <h5>NUESTRA</h5>
+                <h5>REVISTA.</h5>
+                <span class="thin-text">Santa Rosa 655. Oficina 6.</span><br>
+                <span class="thin-text">Santiago, Chile.</span><br>
+                <span class="thin-text">Fono: 2 2 634 12 74</span><br>
+                <span class="thin-text">contacto@joiamagazine.com</span><br>
+            </div>
+            
+        </div>
+    </div>
+
+
+
+
+    <!-- Footer -->
     <footer class="text-center py-4">
         <ul class="list-inline">
-            <li class="list-inline-item"><a href="#">Instagram</a></li>
-            <li class="list-inline-item"><a href="#">Facebook</a></li>
-            <li class="list-inline-item"><a href="#">JOIA</a></li>
+            <li class="list-inline-item">
+                <a href="https://www.instagram.com/joiamagazine" target="_blank">
+                    <i class="fab fa-instagram fa-2x"></i>
+                </a>
+            </li>
+            <li class="list-inline-item">
+                <a href="https://web.facebook.com/p/JOIA-Magazine-100050523577872/?_rdc=1&_rdr#" target="_blank">
+                    <i class="fab fa-facebook fa-2x"></i>
+                </a>
+            </li>
+            <li class="list-inline-item">
+                <a href="https://www.twitter.com/joiamagazine" target="_blank">
+                    <i class="fab fa-twitter fa-2x"></i>
+                </a>
+            </li>
         </ul>
     </footer>
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
 
 </body>
+
+    <!-- JavaScript de Bootstrap -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js">
+    </script>
+
 </html>

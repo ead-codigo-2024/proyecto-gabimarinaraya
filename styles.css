@@ -1,6 +1,6 @@
 /* Estilos básicos */
 body {
-    font-family: Arial, sans-serif;
+    font-family: 'Figtree', sans-serif;
     margin: 0;
     padding: 0;
 }
@@ -16,8 +16,8 @@ header .logo {
 }
 
 header .img-logo {
-    width: 200px; /* Tamaño específico */
-    height: 100px; /* Tamaño específico */
+    width: 200px; 
+    height: 100px; 
 }
 
 .navbar-toggler {
@@ -88,27 +88,28 @@ a {
 h1.display-4 {
     font-size: 2rem;
     font-weight: bold;
-    margin-top: 20px; /* Espacio arriba del título */
-    margin-bottom: 20px; /* Espacio debajo del título */
-    color: red;
+    margin-top: 20px;
+    margin-bottom: 20px; 
+    color: rgb(0, 0, 0);
 }
 
 h2 {
     font-size: 2rem;
     font-weight: bold;
-    margin-top: 20px; /* Espacio arriba del título */
-    margin-bottom: 20px; /* Espacio debajo del título */
+    margin-top: 20px; 
+    margin-bottom: 20px; 
     color: red;
-    margin-left: 70px; /* Margen izquierdo para alinear con h3 */
+    text-align: center;
+
 }
 
 h3 {
     font-size: 1.5rem;
     font-weight: bold;
-    margin-top: 20px; /* Espacio arriba del título */
-    margin-bottom: 20px; /* Espacio debajo del título */
+    margin-top: 20px; 
+    margin-bottom: 20px; 
     color: black;
-    margin-left: 0px; /* Margen izquierdo para alinear con h2 */
+    margin-left: 0px; 
 }
 
 .content-left img {
@@ -143,10 +144,144 @@ p {
  /* Estilo fotografia */
  
  .text-container {
-    background-color: black; /* Color de fondo negro */
-    color: white; /* Color de texto blanco */
-    padding: 20px; /* Espacio interno */
-    border-radius: 8px; /* Esquinas redondeadas */
-    max-width: 1000px; /* Ancho máximo del cuadro */
-    margin: 0 auto; /* Centra el cuadro horizontalmente */
+    background-color: black;
+    color: white;
+    padding: 20px; 
+    border-radius: 8px; 
+    max-width: 1000px;
+    margin: 0 auto; 
 }
+
+
+
+ /* Estilo para el menú desplegable */
+        .dropdown-menu {
+            display: none;
+            position: absolute;
+            top: 100%;
+            left: 0;
+            background-color: #000; 
+            padding: 10px;
+            border-radius: 4px; 
+            min-width: 150px; 
+        }
+        
+        .nav-item:hover .dropdown-menu {
+            display: block;
+        }
+
+/* Estilo para los enlaces dentro del menú */
+
+        .dropdown-menu .dropdown-item {
+            color: #fff; /* Texto blanco */
+        }
+
+        .dropdown-menu .dropdown-item:hover {
+            background-color: transparent; 
+            color: red; 
+        }
+
+/* Estilo para las fotos EDICIONES */
+.photo-container {
+    position: relative;
+}
+
+/* Títulos sobre las fotos EDICIONES */
+.photo-title {
+    position: absolute;
+    bottom: 10px;
+    left: 10px;
+    color: white;
+    font-size: 18px;
+    font-weight: bold;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); 
+}
+
+
+
+.photo-container img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; 
+    border-radius: 5px;
+}
+
+
+@media (min-width: 576px) {
+    .col-md-3 {
+        flex: 0 0 25%; /* 4 imágenes en una fila */
+    }
+}
+
+@media (max-width: 575px) {
+    .col-6 {
+        flex: 0 0 50%; /* 2 imágenes en una fila */
+    }
+}
+
+/* PAGINA PROYECTOS */
+
+h5 {
+    font-size: 2rem;
+    font-weight: bold;
+    margin-top: 20px; 
+    margin-bottom: 20px; 
+    color: black;
+    margin-left: 0px; 
+}
+
+strong {
+    font-weight: bold;
+}
+
+
+.thin-text {
+    font-weight: 100; 
+    font-family: Arial, sans-serif;  
+}
+
+.bold-text {
+    font-weight: bold;
+}
+
+.content-left p {
+    column-gap: 50px; 
+    letter-spacing: 1px; 
+    line-height: 1.6; 
+}
+
+
+
+
+/* Titulo fotos pagina inicial */
+
+h6 {
+    font-size: 5rem;
+    font-weight: bold;
+    color: rgb(255, 255, 255);
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); 
+}
+
+h7 {
+    font-size: 1rem;
+    font-weight: medium;
+    color: rgb(255, 255, 255);
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); 
+}
+
+/* FOTOS */
+
+.custom-img {
+    width: 100%;
+    height: 250px; 
+    object-fit: cover; 
+}
+
+
+
+
+
+
+
+
+
